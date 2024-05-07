@@ -46,8 +46,8 @@ export const filterAffairs = (
 	return copyAffairs; // need to fix
 };
 
-export const deleteAffair = (affairs: AffairType[], _id: number): any => {
-    const copyAffairs = affairs.filter(a => a._id !== _id)
+export const deleteAffair = (affairs: AffairType[], _id: number) => {
+	const copyAffairs = affairs.filter((a) => a._id !== _id);
 	return copyAffairs; // need to fix
 };
 
@@ -57,8 +57,11 @@ function HW2() {
 
 	const filteredAffairs = filterAffairs(affairs, filter);
 	const deleteAffairCallback = (_id: number) => {
-        deleteAffair(defaultAffairs, _id);
-    };
+			//	const deletedAffairs = affairs.filter(a => a._id !== _id)
+        const deletedAffairs = deleteAffair(affairs, _id);
+				setAffairs(deletedAffairs)
+				}
+    
 
 	return (
 		<div id={'hw2'}>
