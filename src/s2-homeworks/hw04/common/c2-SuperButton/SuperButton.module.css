@@ -1,16 +1,37 @@
 .button {
+	width: Hug (129px) px;
+	height: Hug (30px) px;
+	top: 1519px;
+	left: 576px;
+	padding: 5px 24px 5px 24px;
+	gap: 10px;
+	border-radius: 3px 0px 0px 0px;
+	opacity: 0px;
+
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	text-align: left;
+  color: white;
 }
 
 .disabled {
+  background-color: #004D99;
+
 }
 
 .secondary {
+  background-color: #0066CC;
 }
 
 .default {
+  background-color: #0066CC;
+
 }
 
 .red {
+  background-color: red
 }
 
 .default:hover {
@@ -21,7 +42,6 @@
 
 .secondary:hover {
 }
-
 
 .default:active {
 }

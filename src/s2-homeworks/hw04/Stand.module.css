@@ -21,3 +21,9 @@
     flex-direction: column;
     gap: 36px;
 }
+
+
+.test  {
+    background-color: red;
+    margin-left: 20px;
+}
