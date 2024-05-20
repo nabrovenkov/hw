@@ -13,25 +13,29 @@
 	font-weight: 600;
 	line-height: 20px;
 	text-align: left;
-  color: white;
+	color: white;
+	
 }
 
 .disabled {
-  background-color: #004D99;
-
+	background-color: #004d99;
+	opacity: 50%;
 }
 
 .secondary {
-  background-color: #0066CC;
+	color: #0066cc;
+	width: Hug (176px) px;
+	
 }
 
 .default {
-  background-color: #0066CC;
-
+	background-color: #0066cc;
+	
 }
 
 .red {
-  background-color: red
+	background-color: #CC1439;
+	
 }
 
 .default:hover {
