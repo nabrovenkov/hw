@@ -27,7 +27,6 @@ const Stand = () => {
                         id={'hw4-super-input-with-error'}
                         value={stateForAllInputs}
                         onChangeText={setValue}
-                        className={s.test}
                     
                         error={error}
                         onEnter={() => {
@@ -93,6 +92,8 @@ const Stand = () => {
                         id={'hw4-super-checkbox-like-old'}
                         checked={stateForAllCheckboxes}
                         onChange={(e) => setChecked(e.currentTarget.checked)}
+                        // onChange={() => console.log(123)}
+                        
                     />
                 </div>
             </div>
