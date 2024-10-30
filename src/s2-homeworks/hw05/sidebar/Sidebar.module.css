@@ -1,16 +1,42 @@
 .sidebar {
+	width: 317px;
+	height: 100%;
+	border: 1px solid black;
+	background-color: white;
+
+	display: none;
+	position: absolute;
 }
 
 .sidebar.open {
+	display: block;
 }
 
 .background {
+	position: fixed;
+	top: 0;
+	left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .nav {
+	/* z-index: 8; */
+	/* position: absolute; */
+	color: black;
+	font-size: 22px;
+	display: flex;
+	flex-direction: column;
+	margin-left: 70px;
 }
 
 .nav a {
+	margin-top: 16px;
+	margin-bottom: 45px;
 }
 
 .nav a:hover {
@@ -19,6 +45,12 @@
 .nav a.active {
 }
 .close {
+	width: 24px;
+	height: 24px;
+	border: none;
+	background-color: white;
+	margin-left: 269px;
+	margin-top: 16px;
 }
 
 .close img {
