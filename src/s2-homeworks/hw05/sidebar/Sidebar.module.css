@@ -3,6 +3,7 @@
 	height: 100%;
 	border: 1px solid black;
 	background-color: white;
+	z-index: 5;
 
 	display: none;
 	position: absolute;
@@ -16,33 +17,39 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: rgba(0, 0, 0, 0.5);
+	
 }
 
 .nav {
-	/* z-index: 8; */
 	/* position: absolute; */
-	color: black;
-	font-size: 22px;
 	display: flex;
 	flex-direction: column;
-	margin-left: 70px;
+	text-decoration: none;
+	color: black;
+	margin-top: 16px;
+	margin-bottom: 45px;
+	font-size: 22px;
+	font-weight: 600;
 }
 
 .nav a {
-	margin-top: 16px;
-	margin-bottom: 45px;
+	margin-left: 70px;
 }
 
 .nav a:hover {
+	color: #58ACFF;
+
 }
 
 .nav a.active {
+	color: #0059B2;
+	text-decoration: underline;
 }
 .close {
 	width: 24px;
