@@ -10,8 +10,8 @@ export const homeWorkReducer = (state: any, action: any): any => { // need to fi
             const sortState = [...state].sort((a, b) => {
                 return (
                     action.payload === 'up' ?
-                    b.name.length - a.name.length :
-                    a.name.length - b.name.length 
+                     a.name.localeCompare(b.name) :
+                    b.name.localeCompare(a.name)
                 )
             }) 
             return sortState; // need to fix
