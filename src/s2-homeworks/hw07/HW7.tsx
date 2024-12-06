@@ -19,8 +19,6 @@ const arr = [
 
 const HW7 = () => {
 	const [value, onChangeOption] = useState<number>(1); // селект и радио должны работать синхронно
-	console.log(`value ${typeof value}`);
-	console.log(`arr: ${arr[0].id} ${typeof arr[0].id}`);
 	return (
 		<div id={'hw7'}>
 			<div className={s2.hwTitle}>Homework #7</div>
